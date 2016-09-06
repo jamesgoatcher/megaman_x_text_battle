@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Mega Man Text Battle</title>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<header>
+		<h1>Mega Man X Text Battle</h1>
+	</header>
+
+	<main>
+
+		<!-- Start Button -->
+		<div id="start_div">
+			<button id="start_button">Start Game</button>
+		</div>
+
+		<!-- Game -->
+		<div id="game_div">
+			<!-- X -->
+			<div id="x_div">
+				<!-- X Low Catchphrase -->
+				<div id="x_notice2">
+				</div>
+				<!-- X Gif -->
+				<div class="div_size">
+					<div id="x_gif_div">
+						<img id="x_gif" src="img/x.gif"/>
+					</div>
+				</div>
+				<!-- X Stats -->
+				<div class="table_size">
+					<table id="x_stats" border='1'>
+						<tr>
+							<th>Name</th>
+							<th>HP</th>
+						</tr>
+						<tr>
+							<td id="x_name"></td>
+							<td id="x_hp"></td>
+						</tr>
+					</table>
+				</div>
+				<!-- X Moves -->
+				<div class="table_size">
+					<table id="x_moves">
+						<tr>
+							<td><button id="x_atk1_button">X-Buster</button></td>
+							<td id="x_atk1_count"></td>
+						</tr>
+						<tr>
+							<td><button id="x_atk2_button">Charged Shot</button></td>
+							<td id="x_atk2_count"></td>
+						</tr>
+						<tr>
+							<td><button id="x_atk3_button">Giga Attack</button></td>
+							<td id="x_atk3_count"></td>
+						</tr>
+					</table>
+				</div>
+				<!-- X Console Log -->
+				<div id="x_notice">
+				</div>
+			</div>
+			<!-- Sigma -->
+			<div id="sigma_div">
+				<!-- Sigma Low Catchphrase -->
+				<div id="sigma_notice2">
+				</div>
+				<!-- Sigma Gif -->
+				<div class="div_size">
+					<img id="sigma_gif" src="img/sigma.gif">
+				</div>
+				<!-- Sigma Stats -->
+				<div class="table_size">
+					<table id="sigma_stats" align="left" border='1'>
+						<tr>
+							<th>Name</th>
+							<th>HP</th>
+						</tr>
+						<tr>
+							<td id="sigma_name"></td>
+							<td id="sigma_hp"></td>
+						</tr>
+					</table>
+				</div>
+				<!-- Sigma Console Log -->
+				<div id="sigma_notice">
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+<script type="text/javascript" src="js/game.js"></script>
+</body>
+</html>

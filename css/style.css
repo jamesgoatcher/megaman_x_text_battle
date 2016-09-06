@@ -1,0 +1,131 @@
+* {
+	font-family: 'VT323', monospace;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	text-align: center;
+}
+
+button {
+	display: block;
+}
+
+td, th {
+	padding: 0 2em;
+}
+
+#start_button {
+	margin: 0 auto;
+	text-align: center;
+	width: 10em;
+	height: 3em;
+	font-size: 1em;
+	background: #fff;
+	border: 1px solid #000;
+}
+
+#start_button:hover {
+	background: #188bde;
+}
+
+#game_div {
+	display: none;
+	justify-content: center;
+}
+
+#x_gif {
+	width: 60px;
+	display: block;
+}
+
+#x_gif2 {
+	width: 80px;
+	display: block;
+}
+
+#x_gif_reverse {
+	width: 50px;
+	display: block;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+#sigma_gif {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+.div_size {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	height: 200px;
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+.table_size {
+	display: flex;
+	justify-content: center;
+}
+
+#x_atk1_button, #x_atk2_button, #x_atk3_button {
+	margin: 10px auto;
+}
+
+.flash_red {
+	-moz-animation: flash .25s ease-out;
+	-moz-animation-iteration-count: 1;
+	-webkit-animation: flash .25s ease-out;
+	-webkit-animation-iteration-count: 1;
+	-ms-animation: flash .25s ease-out;
+	-ms-animation-iteration-count: 1;
+	-o-animation: flash .25s ease-out;
+	-o-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes flash {
+	0% {background: none;}
+	50% {background: red;}
+	100% {background: none;}
+}
+
+@-moz-keyframes flash {
+	0% {background: none;}
+	50% {background: red;}
+	100% {background: none;}
+}
+
+@-o-keyframes flash {
+	0% {background: none;}
+	50% {background: red;}
+	100% {background: none;}
+}
+
+#x_notice, #x_notice2 {
+	color: #188bde;
+	font-size: 2em;
+	display: flex;
+	justify-content: center;	
+}
+
+#sigma_notice, #sigma_notice2 {
+	color: red;
+	font-size: 2em;
+	display: flex;
+	justify-content: center;
+}
+
+#x_notice2, #sigma_notice2 {
+	height: 2em;
+}
+
