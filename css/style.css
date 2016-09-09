@@ -9,6 +9,9 @@ html, body {
 
 header {
 	text-align: center;
+	background: #188bde;
+	color: #fff;
+	font-weight: 300;
 }
 
 button {
@@ -17,6 +20,10 @@ button {
 
 td, th {
 	padding: 0 2em;
+}
+
+#start_div {
+	margin-top: 8%;
 }
 
 #start_button {
@@ -31,6 +38,7 @@ td, th {
 
 #start_button:hover {
 	background: #188bde;
+	color: #fff;
 }
 
 #game_div {
@@ -62,6 +70,7 @@ td, th {
 	-o-transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
+	z-index: 100;
 }
 
 .div_size {
@@ -93,6 +102,39 @@ td, th {
 	-o-animation-iteration-count: 1;
 }
 
+#sigma_console-log > li {
+	list-style: none;
+	opacity: 0;
+}
+
+#sigma_console-log > li:nth-child(1) {
+	opacity: 1;
+}
+
+#sigma_console-log > li:nth-child(2) {
+	opacity: .75;
+}
+
+#sigma_console-log > li:nth-child(3) {
+	opacity: .6;
+}
+
+#sigma_console-log > li:nth-child(4) {
+	opacity: .4;
+}
+
+#sigma_console-log > li:nth-child(5) {
+	opacity: .3;
+}
+
+#sigma_console-log > li:nth-child(6) {
+	opacity: .2;
+}
+
+#sigma_console-log > li:nth-child(7) {
+	opacity: .1;
+}
+
 @-webkit-keyframes flash {
 	0% {background: none;}
 	50% {background: red;}
@@ -118,6 +160,10 @@ td, th {
 	justify-content: center;	
 }
 
+#sigma_notice {
+	height: 80px;
+}
+
 #sigma_notice, #sigma_notice2 {
 	color: red;
 	font-size: 2em;
@@ -129,3 +175,8 @@ td, th {
 	height: 2em;
 }
 
+.add_red {
+	background: rgba(255,15,15,.5);
+	border-radius: 500px;
+	z-index: 200;
+}
